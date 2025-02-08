@@ -7,15 +7,16 @@ git configs, shortcuts and helpers
 
 
 
-Deleting Local Branches
-
+## Deleting Local Branches
 git branch -d branchname (deletes branch if it has already been fully merged in upstream branch)
 git branch -D branchname (alis for --delete --force, deletes branch regardless of merged status.)
 
-Deleting commits on remote 
+## Deleting remote branches
+git push REMOTENAME --delete BRANCH
 
+## Deleting commits on remote 
 git reset --hard HEAD~3
 
-delete the comits from remote
+## delete the comits from remote
 
 git push origin HEAD --force
